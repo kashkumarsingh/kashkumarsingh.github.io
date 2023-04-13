@@ -8,7 +8,7 @@
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
-    "deploy": "next build  && npx gh-pages -d out"
+    "deploy": "npm run build && gh-pages -d .next"
   },
   "dependencies": {
     "@types/gsap": "^3.0.0",

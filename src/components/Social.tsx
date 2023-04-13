@@ -15,7 +15,7 @@ const Social:React.FC<SocialProps> = ({links})=>{
             {links.map(({href, icon: Icon}) => (
                  <li key={href} className="px-4">
                     <a href={href} className="social-link">
-                        <Icon size={40}/>
+                        <Icon className="fill-[#222]" size={40}/>
                     </a>
                  </li>
             ))}

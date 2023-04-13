@@ -77,6 +77,9 @@ h6 {
   h6 {
     @apply font-bold;
   }
+  p{
+    @apply font-bold text-[#222];
+  }
 
   h1 {
     @apply text-5xl;

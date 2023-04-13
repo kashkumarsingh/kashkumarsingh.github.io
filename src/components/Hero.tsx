@@ -43,10 +43,10 @@ const Hero: React.FC<HeroProps> = ({ id }) => {
     }, []);
 
     return (
-        <section className="h:auto sm:h-auto md:h-screen relative overflow-hidden flex justify-center items-center z-0 text-center hero " id={id}>
+        <section className="relative py-32 overflow-hidden flex justify-center items-center z-0 text-center h-auto md:h-screen lg:py-0 hero " id={id}>
             <div className="container mx-auto px-4">
                 <div className="hero__content sm:py-8 md:py-0" ref={elementsRef}>
-                    <h1 id="text-animation" className="mb-8 hero__heading sm:text-4xl md:text-[4rem] ">
+                    <h1 id="text-animation" className="mb-8 hero__heading sm:text-4xl md:text-[4rem] md:leading-[1] ">
                         Hi, I&apos;m Kashkumar Singh
                     </h1>
                     <h2 id="text-animation-2" className="mb-8 hero__subheading sm:text-2xl md:text-[2.5rem]">

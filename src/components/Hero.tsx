@@ -1,6 +1,6 @@
 import Button from "./Button";
 import { Link } from 'react-scroll';
-import { FaFacebook, FaTwitter, FaInstagram } from 'react-icons/fa';
+import { FaLinkedin, FaBehance, FaGithub } from 'react-icons/fa';
 import Social from "./Social";
 import { useEffect, useRef } from 'react';
 import gsap, { Quint } from 'gsap';
@@ -10,9 +10,9 @@ interface HeroProps {
     id: string;
 }
 const socialLinks = [
-    { href: 'https://www.facebook.com/', icon: FaFacebook },
-    { href: 'https://twitter.com/', icon: FaTwitter },
-    { href: 'https://www.instagram.com/', icon: FaInstagram }
+    { href: 'https://www.linkedin.com/in/kashkumar-singh/', icon: FaLinkedin },
+    { href: 'https://www.behance.net/kashsingh1', icon: FaBehance },
+    { href: 'https://github.com/kashkumarsingh', icon: FaGithub }
 ];
 
 

@@ -1,5 +1,5 @@
 /** @type {import('next').NextConfig} */
-const isProd = process.env.NODE_ENV === 'production'
+const isProduction = process.env.NODE_ENV === 'production'
 const nextConfig = {
   // assetPrefix: isProd ? '/my-portfolio' : '',
   basePath: isProduction ? '/kashkumarsingh.github.io' : '',

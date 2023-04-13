@@ -33,7 +33,7 @@ export default function Navbar() {
         <header className="fixed top-4 right-0 left-0  w-full px-2 2xl:px-16 z-[100] header header--home" id="header" ref={menuRef}>
             <div className="container mx-auto">
                 <div className="header__inner">
-                    <nav className="flex justify-between items-center shadow-xl px-8 py-7 bg-black-rgba border-custom rounded-full navbar">
+                    <nav className="flex justify-between items-center shadow-xl  bg-black-rgba border-custom rounded-full px-4 py-4 md:px-8 md:py-7 navbar">
                         <div className="navbar__brand flex justify-between items-center w-full ">
                             <Link href="/" className="font-sans text-4xl text-white navbar__logo">KS</Link>
                             <Button className="block md:hidden text-white focus:outline-none " onClick={toggleMenu} disabled={false}>

@@ -1,11 +1,29 @@
+@font-face {
+  font-family: 'GRIFTER';
+  src: url('../../public/assets/fonts/GRIFTERBold.woff2') format('woff2'),
+    url('../../public/assets/fonts/GRIFTERBold.woff') format('woff');
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+  /* Use fallback font until custom font is loaded */
+}
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
 :root {
-  --foreground-rgb: 0, 0, 0;
+  --foreground-rgb: 34, 34, 34;
   --background-start-rgb: 214, 219, 220;
   --background-end-rgb: 255, 255, 255;
+  --primary-font-family: 'Plus Jakarta Sans', sans-serif;
+  --base-font-size: 1rem;
+  --base-font-line-height: 2rem;
+  --base-font-weight-400: 400;
+  --hero-background-start-rgb: 251 232 222 / 50%;
+  --hero-background-end-rgb:251 232 222 / 0%;
+  --color-primary: #FFC857;
+  --color-secondary: #222;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -16,12 +34,146 @@
   }
 }
 
+
+
 body {
+  position: relative;
+  z-index: 1;
+  font-family: var(--primary-font-family);
+  font-weight: var(--base-font-weight-400);
+  font-size: var(--base-font-size);
+  line-height: var(--base-font-line-height);
   color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+  background-image: linear-gradient(270deg, rgb(251 232 222 / 50%) 0.91%, rgb(251 232 222 / 0%) 101.41%);
+
+}
+body::before{
+  content:'';
+  position: absolute;
+  background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAMAAAADCAYAAABWKLW/AAAACXBIWXMAAAsSAAALEgHS3X78AAAAKUlEQVQImR3IMQ0AIADEwH6CElZ0YQWJtfMEbjzUrZ62DGAmWQB58wEXS/YMP54DhCsAAAAASUVORK5CYII=) repeat;
+  background-position: center center;
+  height: 100%;
+  width: 100%;
+  z-index: -1;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: 'GRIFTER', sans-serif;
+  color: #222;
+}
+
+@layer base {
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    @apply font-bold;
+  }
+
+  h1 {
+    @apply text-5xl;
+  }
+
+  h2 {
+    @apply text-4xl;
+  }
+
+  h3 {
+    @apply text-[2rem] leading-tight;
+  }
+  h4{
+     @apply text-2xl;
+  }
+  h5{
+     @apply text-xl
+  }
+  h6{
+     font-size: var(--base-font-size);
+     line-height: var(--base-font-line-height);
+  }
+  .navbar__nav .active{
+    background-color: #3c3c3c;
+  }
+  
+  .hero:after{
+    content: '';
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url('../../public/assets/images/about_float_scribbles.svg') no-repeat;
+    background-position: center center;
+    background-size: cover;
+    z-index: -1;
+    position: absolute;
+    transform: translate(0, 24%);
+    -webkit-transform: translate(0, 24%);
+    -moz-transform: translate(0, 24%);
+    -ms-transform: translate(0, 24%);
+    -o-transform: translate(0, 24%);
+    overflow: hidden;
+  }
+  .marquees:after{
+    content:'';
+    position: absolute;
+    width:2px;
+    height: 100%;
+    background-color: #333;
+  }
+
+  .marquee__list span:after{
+     content:'/';
+     position: absolute;
+     right: 0;
+  }
+  .marquee__list span:last-of-type:after{
+    display: none;
+  }
+
+ .marquee__inner  .slick-track{
+    width: 10000px !important;
+  }
+  .marquee__inner  .slick-slide{
+    box-sizing: border-box;
+  }
+  .work-items .work-item{
+    position: relative;
+    z-index: 1;
+  }
+  .work-items .work-item::before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    z-index: -1;
+    background: rgb(34 34 34 / 95%);
+}
+.work-item-bg-2 {
+  background: url('../../public/assets/images/projects/proshine.jpg') no-repeat;
+  background-position: center;
+  background-size: cover;
+  z-index: -1;
+}
+.work-item-bg-3 {
+  background: url('../../public/assets/images/projects/redwing.jpg') no-repeat;
+  background-position: center;
+  background-size: cover;
+  z-index: -1;
+}
+.work-item-bg-4 {
+  background: url('../../public/assets/images/projects/suayu.jpg') no-repeat;
+  background-position: center;
+  background-size: cover;
+  z-index: -1;
+}
 }

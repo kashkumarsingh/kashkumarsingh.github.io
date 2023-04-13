@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<tile>
+  <visual>
+    <background color="#ffffff"/>
+    <square70x70logo src="/mstile-70x70.png"/>
+    <square150x150logo src="/mstile-70x70.png"/>
+    <square310x310logo src="/mstile-70x70.png"/>
+    <wide310x150logo src="/mstile-70x70.png"/>
+  </visual>
+</tile>

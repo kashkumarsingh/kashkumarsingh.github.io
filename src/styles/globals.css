@@ -34,7 +34,9 @@
   }
 }
 
-
+/* html {
+  scroll-behavior: smooth;
+} */
 
 body {
   position: relative;
@@ -45,6 +47,7 @@ body {
   line-height: var(--base-font-line-height);
   color: rgb(var(--foreground-rgb));
   background-image: linear-gradient(270deg, rgb(251 232 222 / 50%) 0.91%, rgb(251 232 222 / 0%) 101.41%);
+  font-display: swap;
 
 }
 body::before{

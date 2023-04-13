@@ -43,7 +43,7 @@ const Hero: React.FC<HeroProps> = ({ id }) => {
     }, []);
 
     return (
-        <section className="sm:h-auto md:h-screen relative overflow-hidden flex justify-center items-center z-0 text-center hero " id={id}>
+        <section className="h:auto sm:h-auto md:h-screen relative overflow-hidden flex justify-center items-center z-0 text-center hero " id={id}>
             <div className="container mx-auto px-4">
                 <div className="hero__content sm:py-8 md:py-0" ref={elementsRef}>
                     <h1 id="text-animation" className="mb-8 hero__heading sm:text-4xl md:text-[4rem] ">
@@ -52,7 +52,7 @@ const Hero: React.FC<HeroProps> = ({ id }) => {
                     <h2 id="text-animation-2" className="mb-8 hero__subheading sm:text-2xl md:text-[2.5rem]">
                         A UI/UX Designer
                     </h2>
-                    <p className="font-bold sm:max-w-[100%] md:max-w-[67.777%] w-full mx-auto  mb-4 hero__description">
+                    <p className="text-[#222] font-bold sm:max-w-[100%] md:max-w-[67.777%] w-full mx-auto  mb-4 hero__description">
                         Passionate about creating functional, accessible, and responsive
                         digital experiences that not only drive engagement and user satisfaction, but also meet the
                         highest standards of usability and inclusivity.

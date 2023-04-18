@@ -3,7 +3,7 @@ import { Link } from 'react-scroll';
 import { FaLinkedin, FaBehance, FaGithub } from 'react-icons/fa';
 import Social from "./Social";
 import { useEffect, useRef } from 'react';
-import gsap, { Quint } from 'gsap';
+import gsap, { Power4 } from 'gsap';
 
 
 interface HeroProps {
@@ -30,7 +30,7 @@ const Hero: React.FC<HeroProps> = ({ id }) => {
                     opacity: 1,
                     x: 0,
                     duration: 1,
-                    ease: Quint.easeOut,
+                    ease: Power4.easeOut,
                     stagger: {
                         each: 0.1,
                         from: 'start',

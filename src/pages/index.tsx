@@ -114,6 +114,13 @@ export default function Home() {
             </div>
             {/* Section-title */}
             <div className="relative flex flex-col justify-center items-start flex-nowrap work-items">
+            <WorkItem
+                bgClassName="work-item-bg-0"
+                labels={labels}
+                title="Revolutionizing Food Donation: A UI/UX Case Study of ShareBite"
+                description="ShareBite was a mobile app designed to connect businesses with excess food to food-insecure residents in Kentucky.The goal of the project was to make it easy for businesses to donate food and for food-insecure residents to receive it. "
+                linkText="View Case Study" linkUrl="https://www.figma.com/proto/vCy6s7XQLfOdZCBmsCAhTk/Kashkumar-UIUX?page-id=1030%3A6582&node-id=1030-6618&viewport=261%2C176%2C0.03&scaling=scale-down-width"
+              />
               <WorkItem
                 bgClassName="work-item-bg-1"
                 labels={labels}
@@ -121,7 +128,7 @@ export default function Home() {
                 description="ClinicQuest is a app and website designed to improve 
                             the pediatric clinic experience for children aged 6-21 years old who 
                             visit the hospital for infusion, chemotherapy, and routine checkups."
-                linkText="View Case Study" linkUrl="https://www.example.com/"
+                linkText="View Case Study" linkUrl="https://www.figma.com/proto/vCy6s7XQLfOdZCBmsCAhTk/Kashkumar-UIUX?page-id=1007%3A6504&node-id=1208-8427&viewport=-18%2C324%2C0.03&scaling=scale-down-width"
               />
               <WorkItem
                 bgClassName="work-item-bg-2"
@@ -129,21 +136,21 @@ export default function Home() {
                 title="ProShine Window Cleaning Website Redesign"
                 description="ProShine Window Cleaning is a cleaning service company based in Meridian, Idaho. 
                             The company provides commercial and residential cleaning services to customers in the local area."
-                linkText="View Case Study" linkUrl="https://www.example2.com/"
+                linkText="View Case Study" linkUrl="https://www.figma.com/proto/vCy6s7XQLfOdZCBmsCAhTk/Kashkumar-UIUX?page-id=1216%3A11026&node-id=1218-14315&viewport=414%2C466%2C0.05&scaling=scale-down-width"
               />
               <WorkItem
                 bgClassName="work-item-bg-3"
                 labels={labels}
                 title="Redwing-VFX-Studio Website Design"
                 description="Redwing-VFX-Studio was a new company in the market and aimed to attract clients through their landing page by showcasing their services and existing portfolio, as well as attracting potential candidates interested in joining the company."
-                linkText="View Case Study" linkUrl="https://www.example3.com/"
+                linkText="View Case Study" linkUrl="https://www.figma.com/proto/vCy6s7XQLfOdZCBmsCAhTk/Kashkumar-UIUX?page-id=870%3A707&node-id=870-708&viewport=493%2C376%2C0.06&scaling=scale-down-width"
               />
               <WorkItem
                 bgClassName="work-item-bg-4"
                 labels={labels}
                 title="Revitalized SuAyu E-commerce Website(B2B & B2C)"
                 description="SuAyu is an Indian healthcare company that specializes in developing innovative healthcare solutions using natural sources."
-                linkText="View Case Study" linkUrl="https://www.example4.com/"
+                linkText="View Case Study" linkUrl="https://www.figma.com/proto/vCy6s7XQLfOdZCBmsCAhTk/Kashkumar-UIUX?page-id=1218%3A13543&node-id=1218-13543&viewport=744%2C661%2C0.13&scaling=scale-down-width"
               />
             </div>
           </div>

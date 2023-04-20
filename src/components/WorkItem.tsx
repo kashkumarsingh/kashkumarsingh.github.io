@@ -1,5 +1,4 @@
 import Link from "next/link";
-
 interface WorkItemProps{
     labels:string[];
     title: string;
@@ -19,7 +18,7 @@ const WorkItem:React.FC<WorkItemProps> = ({labels, title, description, linkUrl,l
                   <h3 className="text-white mb-4 work-item__title">{title}</h3>
                   <p className="sm:max-w-[100%] md:max-w-[75%] text-white mb-4 work-item__description">{description}</p>
                   <div className="text-white mb-4 work-item__links">
-                    <Link  href={linkUrl} className="w-full text-center  md:w-auto font-sans font-bold btn btn-primary" target="_blank" rel="noopener">{linkText}</Link>
+                    <Link  href={linkUrl} className="w-full text-center  md:w-auto font-sans font-bold btn btn-primary" target="_blank" rel="noopener noreferrer">{linkText}</Link>
                   </div>
              </div>
         </div>

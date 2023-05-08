@@ -117,7 +117,7 @@ export default function Home() {
             <WorkItem
                 bgClassName="work-item-bg-0"
                 labels={labels}
-                title="Revolutionizing Food Donation: A UI/UX Case Study of ShareBite"
+                title="Revolutionizing Food Donation: A UI/UX Case Study of ShareBite Mobile App"
                 description="ShareBite was a mobile app designed to connect businesses with excess food to food-insecure residents in Kentucky.The goal of the project was to make it easy for businesses to donate food and for food-insecure residents to receive it. "
                 linkText="View Case Study" linkUrl="https://www.figma.com/proto/vCy6s7XQLfOdZCBmsCAhTk/Kashkumar-UIUX?page-id=1030%3A6582&node-id=1030-6618&viewport=261%2C176%2C0.03&scaling=scale-down-width"
               />

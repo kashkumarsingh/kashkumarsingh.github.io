@@ -165,6 +165,18 @@ h6 {
     z-index: -1;
     background: rgb(34 34 34 / 95%);
 }
+.work-item-bg-0{
+  background: url('../../public/assets/images/projects/sharebite.jpg') no-repeat;
+  background-position: center;
+  background-size: cover;
+  z-index: -1;
+}
+.work-item-bg-1{
+  background: url('../../public/assets/images/projects/clinicquest.jpg') no-repeat;
+  background-position: center;
+  background-size: cover;
+  z-index: -1;
+}
 .work-item-bg-2 {
   background: url('../../public/assets/images/projects/proshine.jpg') no-repeat;
   background-position: center;

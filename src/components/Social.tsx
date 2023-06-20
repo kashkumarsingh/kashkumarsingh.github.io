@@ -14,7 +14,7 @@ const Social:React.FC<SocialProps> = ({links})=>{
         <ul className="max-w-[768px] mx-auto social-links flex justify-center items-center text-center mb-8">
             {links.map(({href, icon: Icon}) => (
                  <li key={href} className="px-4">
-                    <a href={href} className="social-link">
+                    <a href={href} className="social-link" target="_blank" rel="noopener noreferrer">
                         <Icon className="fill-[#222]" size={40}/>
                     </a>
                  </li>

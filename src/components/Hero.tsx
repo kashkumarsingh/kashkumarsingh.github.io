@@ -58,7 +58,7 @@ const Hero: React.FC<HeroProps> = ({ id }) => {
                         highest standards of usability and inclusivity.
                     </p>
                     <Social links={socialLinks} />
-                    <Link to="works" smooth={true} duration={500} target="_blank" rel="noopener noreferrer"> <Button className="btn btn-secondary section-scroll-link hero__cta" data-scroll>Projects</Button></Link>
+                    <Link to="works" smooth={true} duration={500}> <Button className="btn btn-secondary section-scroll-link hero__cta" data-scroll>Projects</Button></Link>
                 </div>
             </div>
         </section>

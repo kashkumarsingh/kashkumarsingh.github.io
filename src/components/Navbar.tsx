@@ -45,7 +45,7 @@ export default function Navbar() {
                             <NavLink links={links} className={`${isOpen ? 'w-full flex flex-col navbar__nav mb-4 text-center' : 'md:flex justify-between items-center navbar__nav'}`} />
                             <div className="buttons">
                                 <Button className={`uppercase btn btn-primary ml-4 ${isOpen ? 'w-full ml-0' : ''}`} disabled={false}>
-                                    <Link href='../assets/pdfs/KashkumarSingh_uiux.pdf' target="_blank" rel="noopener noreferrer">Resume</Link>
+                                    <Link href='../../public/assets/pdfs/KashkumarSingh_uiux.pdf' target="_blank" rel="noopener noreferrer">Resume</Link>
                                 </Button>
                             </div>
                         </div>

@@ -43,11 +43,11 @@ export default function Navbar() {
                         {/* brand */}
                         <div className={`md:flex items-center navbar__collapse ${isOpen ? 'absolute w-[75%]  top-[100%] left-[12%] flex flex-col shadow-xl px-2 py-7 bg-black-rgba border border-solid border-white rounded-3xl  transition-all duration-500 ease-in' : 'hidden relative w-auto top-0 left-0'}`} id="navbar__collapse">
                             <NavLink links={links} className={`${isOpen ? 'w-full flex flex-col navbar__nav mb-4 text-center' : 'md:flex justify-between items-center navbar__nav'}`} />
-                            <div className="buttons">
+                            {/* <div className="buttons">
                                 <Button className={`uppercase btn btn-primary ml-4 ${isOpen ? 'w-full ml-0' : ''}`} disabled={false}>
                                     <Link href='/assets/pdfs/KashkumarSingh_uiux.pdf' target="_blank" rel="noopener noreferrer">Resume</Link>
                                 </Button>
-                            </div>
+                            </div> */}
                         </div>
                         {/* Collapsible menu */}
                         {/* hidden md:flex justify-between items-center navbar__collapse */}
